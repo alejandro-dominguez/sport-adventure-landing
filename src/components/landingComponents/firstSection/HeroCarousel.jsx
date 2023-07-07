@@ -6,12 +6,12 @@ const HeroCarousel = ({ heroCarouselImgsData }) => {
     const [selectedIndex, setSelectedIndex] = useState(0)
     const [selectedImg, setSelectedImg] = useState(heroCarouselImgsData[0])
 
-/*     useEffect(() => {
+    useEffect(() => {
         const slideImg = setInterval(() => {
             selectNewImg(selectedIndex, heroCarouselImgsData)
         }, 4250)
         return () => clearInterval(slideImg)
-    }) */
+    })
     
     const selectNewImg = (selectedIndex, heroCarouselImgsData, next = true) => {
         const condition = next ? selectedIndex < heroCarouselImgsData.length - 1 : selectedIndex > 0

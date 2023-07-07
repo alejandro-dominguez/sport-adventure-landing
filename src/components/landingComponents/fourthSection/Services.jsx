@@ -1,8 +1,8 @@
+/*                 {servicesData.map(data => {
+
+                })} */
 const Services = ({ servicesData }) => {
     console.log(servicesData)
-    {/*                 {servicesData.map(data => {
-    
-                    })} */}
     return (
         <section className='pt-[4.6rem] bg-[#0a0c20]'>
             <div className='h-screen flex flex-col justify-start items-center bg-[#070714] text-white px-16'>
