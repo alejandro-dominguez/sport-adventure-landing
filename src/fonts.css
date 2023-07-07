@@ -1,0 +1,17 @@
+@font-face {
+    font-family: airBnbMedium;
+    src: url('./fonts/AirbnbCereal_W_Md.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: airBnbLight;
+    src: url('./fonts/AirbnbCereal_W_Lt.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: airBnbBold;
+    src: url('./fonts/AirbnbCereal_W_XBd.ttf');
+    font-display: swap;
+}
