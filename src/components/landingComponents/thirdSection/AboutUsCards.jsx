@@ -1,8 +1,22 @@
-import { BsFillAwardFill, BsBarChartFill, BsXDiamondFill } from 'react-icons/bs';
+import {
+    BsFillAwardFill,
+    BsBarChartFill,
+    BsXDiamondFill
+} from 'react-icons/bs';
+import { scrollToElement } from '../../../utilities';
 
 const AboutUsCards = ({ data }) => {
+    const scrollAndDisplayTab = (e) => {
+        const targetElement = e.target
+        console.log(targetElement)
+    }
+    
     return (
-        <div className='about-us-cards'>
+        <button
+            type='button' 
+            className='about-us-cards'
+            onClick={(e) => scrollAndDisplayTab(e)}
+        >
             {
                 data.id === 'about-us-1' ?
                     <BsFillAwardFill className='about-us-icon' />
@@ -17,7 +31,7 @@ const AboutUsCards = ({ data }) => {
             <p className='about-us-text'>
                 {data.text}
             </p>
-        </div>
+        </button>
     )
 }
 

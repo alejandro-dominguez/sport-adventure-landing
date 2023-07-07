@@ -1,4 +1,4 @@
-import { FeaturedProducts } from './';
+import { FeaturedProducts } from '.';
 
 const SecondSection = ({ productCardsData }) => {
     return (

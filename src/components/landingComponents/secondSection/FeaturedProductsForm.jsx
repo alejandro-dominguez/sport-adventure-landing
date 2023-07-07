@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { BsXCircleFill } from 'react-icons/bs';
-import { scrollToElement, shortenText }from '../../../utilities/';
+import {
+    scrollToElement,
+    shortenText
+} from '../../../utilities';
 import logo from '../../../assets/logo-sport-W-wide.svg';
 
 const FeaturedProductsForm = ({

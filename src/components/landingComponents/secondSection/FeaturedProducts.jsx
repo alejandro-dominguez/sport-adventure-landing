@@ -3,7 +3,7 @@ import {
     useRef,
     useState
 } from 'react';
-import { FeaturedProductsCards } from './';
+import { FeaturedProductsCards } from '.';
 
 const FeaturedProducts = ({ productCardsData }) => {
     const [isVisible, setIsVisible] = useState(false)

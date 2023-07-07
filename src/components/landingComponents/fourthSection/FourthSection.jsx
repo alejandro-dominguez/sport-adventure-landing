@@ -1,8 +1,16 @@
-import { Services } from './';
+import { Services } from '.';
 
-const FourthSection = ({ servicesData }) => {
+const FourthSection = ({
+    servicesData,
+    tabIndex,
+    setTabIndex
+}) => {
     return (
-        <Services servicesData={servicesData} />
+        <Services
+            servicesData={servicesData}
+            tabIndex={tabIndex}
+            setTabIndex={setTabIndex}
+        />
     )
 }
 

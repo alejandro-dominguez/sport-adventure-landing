@@ -1,6 +1,12 @@
-import { useState, useEffect } from 'react';
-import { BsCaretLeftFill, BsCaretRightFill } from 'react-icons/bs';
-import { scrollToElement } from '../../../utilities/';
+import {
+    useState,
+    useEffect
+} from 'react';
+import {
+    BsCaretLeftFill,
+    BsCaretRightFill
+} from 'react-icons/bs';
+import { scrollToElement } from '../../../utilities';
 
 const HeroCarousel = ({ heroCarouselImgsData }) => {
     const [selectedIndex, setSelectedIndex] = useState(0)

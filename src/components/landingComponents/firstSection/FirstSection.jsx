@@ -1,7 +1,7 @@
 import {
     NavBar,
     HeroSlider
-} from './';
+} from '.';
 
 const FirstSection = ({
     heroCarouselImgsData,

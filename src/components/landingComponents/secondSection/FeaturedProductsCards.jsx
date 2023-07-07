@@ -1,7 +1,11 @@
 import { useState } from 'react';
-import { BsInfoCircleFill, BsXCircleFill, BsFillHandIndexThumbFill } from 'react-icons/bs';
-import { FeaturedProductsForm } from './';
-import { shortenText } from '../../../utilities/';
+import {
+    BsInfoCircleFill,
+    BsXCircleFill,
+    BsFillHandIndexThumbFill
+} from 'react-icons/bs';
+import { FeaturedProductsForm } from '.';
+import { shortenText } from '../../../utilities';
 
 const FeaturedProductsCards = ({
     productCardsData,

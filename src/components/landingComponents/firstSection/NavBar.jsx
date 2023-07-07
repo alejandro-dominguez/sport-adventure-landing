@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { BsCaretDownFill } from 'react-icons/bs';
-import { HeroCarousel } from './';
-import { scrollToElement } from '../../../utilities/';
+import { HeroCarousel } from '.';
+import { scrollToElement } from '../../../utilities';
 import logo from '../../../assets/logo-sport-W-stacked.svg';
 
 const NavBar = ({ heroCarouselImgsData }) => {

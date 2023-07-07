@@ -2,8 +2,9 @@ import {
     FirstSection,
     SecondSection,
     ThirdSection,
+    FourthSection,
     LandingFooter
-} from '../components/landingComponents/';
+} from '../components/landingComponents';
 import { useState } from 'react';
 
 const LandingPage = () => {
@@ -171,6 +172,7 @@ const LandingPage = () => {
                 <SecondSection productCardsData={productCardsData} />
             </div>
             <ThirdSection
+                FourthSection={FourthSection}
                 aboutSliderImgsData={aboutSliderData}
                 aboutCardsData={aboutCardsData}
                 servicesData={servicesData}

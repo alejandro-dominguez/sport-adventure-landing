@@ -1,8 +1,12 @@
-import { AboutUsSlider, AboutUsCards } from './';
+import {
+    AboutUsSlider,
+    AboutUsCards
+} from '.';
 
 const AboutUs = ({
     aboutSliderImgsData,
-    aboutCardsData
+    aboutCardsData,
+    setTabIndex
 }) => {
     return (
         <div className='pt-[4.6rem] bg-[#B50016]'>
@@ -30,7 +34,7 @@ const AboutUs = ({
                     </div>
                     {aboutCardsData.map(data => {
                         return (
-                            <AboutUsCards data={data} key={data.id} />
+                            <AboutUsCards data={data} key={data.id} setTabIndex={setTabIndex} />
                         )
                     })}
                 </div>
