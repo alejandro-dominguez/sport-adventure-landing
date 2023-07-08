@@ -14,7 +14,7 @@ const AboutUs = ({
                 className='h-screen flex flex-col justify-start items-center bg-[#0a0c20] text-white'
             >
                 <AboutUsSlider aboutSliderImgsData={aboutSliderImgsData} />
-                <div className='mt-[2.1rem] grid grid-cols-4 px-16 gap-16 place-content-between font-semibold'>
+                <div className='mt-[2.325rem] grid grid-cols-4 px-16 gap-16 place-content-between font-semibold'>
                     <div className='grid place-items-start gap-[.7rem]'>
                         <h3 className='about-us-h3'>
                             <span className='block w-full text-[1.5rem]'>
@@ -27,7 +27,7 @@ const AboutUs = ({
                                 con nosotros
                             </span>
                         </h3>
-                        <p className='font-light text-[.959rem] leading-[1.44]'>
+                        <p className='about-us-p'>
                             Lorem ipsum dolor sit amet, consecradi pisicing elit. At doloremque, necessi tatibus 
                             repellendus debitis cumque culpa aliquam laborum.
                         </p>

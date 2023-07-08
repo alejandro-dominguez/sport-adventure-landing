@@ -124,12 +124,12 @@ const FeaturedProductsForm = ({
                     <h4 className='product-form-h4'>
                         {shortenText(cardFormData.name, 16)}
                     </h4>
-                    <p className='text-[.98rem] leading-[1.46] tracking-wide -mt-12'>
-                        {shortenText(cardFormData.desc, 270)}
+                    <p className='text-[.98rem] leading-[1.46] tracking-wide -mt-16 -mr-5'>
+                        {shortenText(cardFormData.desc, 290)}
                     </p>
                     </>
                     : null}
-                    <div className='w-52 self-end mb-[.2rem]'>
+                    <div className='w-52 self-end mb-[.2rem] -mr-5'>
                         <img
                             src={logo}
                             alt='Logo Sport Adventure'
