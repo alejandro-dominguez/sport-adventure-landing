@@ -159,7 +159,7 @@ const LandingPage = () => {
             },
         ]
     )
-    const [tabIndex, setTabIndex] = useState(1)
+    const [tabI, setTabI] = useState(1)
 
     return (
         <div className='app-container'>
@@ -177,8 +177,8 @@ const LandingPage = () => {
                 aboutSliderImgsData={aboutSliderData}
                 aboutCardsData={aboutCardsData}
                 servicesData={servicesData}
-                setTabIndex={setTabIndex}
-                tabIndex={tabIndex}
+                setTabI={setTabI}
+                tabI={tabI}
             />
             <LandingFooter />
         </div>

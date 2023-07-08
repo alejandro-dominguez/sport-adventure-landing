@@ -7,13 +7,15 @@ import { scrollToElement } from '../../../utilities';
 
 const AboutUsCards = ({
     data,
-    setTabIndex,
-    tabIndex
+    setTabI,
+    tabI
 }) => {
 
     const displayTabs = (e) => {
-        const elementId = e.target.id
-        setTabIndex(elementId.slice(-1))
+        const elI = Number(e.target.id.slice(-1))
+        if (tabI !== elI) {
+            setTabI(elI)
+        } scrollToElement('services-section')
     }
     
     return (

@@ -61,6 +61,7 @@ const FeaturedProductsForm = ({
                 className={formDisplay ? 'product-form-data-container show inset-0' : 'product-form-data-container'}
                 autoComplete='on'
                 onSubmit={(e) => submitProductForm(e)}
+                tabIndex='-1'
             >
                 <div className='flex flex-col w-full h-full justify-between'>
                     <p className='block text-[1.2rem] font-medium tracking-wide'>
@@ -78,6 +79,7 @@ const FeaturedProductsForm = ({
                             placeholder='Nombre completo:'
                             type='text'
                             required
+                            tabIndex='-1'
                             autoComplete='on'
                             onChange={(e) => getFormData(e)}
                         />
@@ -92,6 +94,7 @@ const FeaturedProductsForm = ({
                             placeholder='Correo electrónico:'
                             type='email'
                             required
+                            tabIndex='-1'
                             autoComplete='on'
                             onChange={(e) => getFormData(e)}
                         />
@@ -106,12 +109,14 @@ const FeaturedProductsForm = ({
                             placeholder='Mensaje:'
                             cols='30'
                             rows='4'
+                            tabIndex='-1'
                             onChange={(e) => getFormData(e)}
                         />
                     </div>
                     <button
                         className='product-form-submit' 
                         type='submit'
+                        tabIndex='-1'
                     >
                         <span className='product-form-span'>
                             Enviar
@@ -142,6 +147,7 @@ const FeaturedProductsForm = ({
                         type='button'
                         className={formDisplay ? 'product-form-close-container show' : 'product-form-close-container'} 
                         onClick={() => closeForm()}
+                        tabIndex='-1'
                     >
                         <BsXCircleFill className='product-form-close-btn' />
                     </button>

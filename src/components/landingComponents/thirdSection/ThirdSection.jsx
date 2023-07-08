@@ -5,8 +5,8 @@ const ThirdSection = ({
     aboutSliderImgsData,
     aboutCardsData,
     servicesData,
-    setTabIndex,
-    tabIndex
+    setTabI,
+    tabI
 }) => {
 
 
@@ -19,7 +19,8 @@ const ThirdSection = ({
             <AboutUs
                 aboutSliderImgsData={aboutSliderImgsData}
                 aboutCardsData={aboutCardsData}
-                setTabIndex={setTabIndex}
+                setTabI={setTabI}
+                tabI={tabI}
             />
         </main>
         <div
@@ -28,8 +29,8 @@ const ThirdSection = ({
         >
             <FourthSection
                 servicesData={servicesData}
-                setTabIndex={setTabIndex}
-                tabIndex={tabIndex}
+                setTabI={setTabI}
+                tabI={tabI}
             />
         </div>
         </>

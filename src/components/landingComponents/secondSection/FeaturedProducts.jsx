@@ -38,8 +38,8 @@ const FeaturedProducts = ({ productCardsData }) => {
             <div className='featured-products-container'>
                 <div
                     className={isVisible ? `flex items-start justify-between px-16 text-white opacity-100 translate-y-0
-                    transition-all ease-out duration-500` : `flex items-start justify-between px-16 text-white opacity-0
-                    translate-y-12 transition-all ease-out duration-500`}
+                    transition-all ease-in-out duration-500` : `flex items-start justify-between px-16 text-white opacity-0
+                    translate-y-12 transition-all ease-in-out duration-500`}
                     ref={textContent}
                 >
                     <div className='grid place-items-center'>

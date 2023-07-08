@@ -2,14 +2,14 @@ import { Services } from '.';
 
 const FourthSection = ({
     servicesData,
-    tabIndex,
-    setTabIndex
+    tabI,
+    setTabI
 }) => {
     return (
         <Services
             servicesData={servicesData}
-            tabIndex={tabIndex}
-            setTabIndex={setTabIndex}
+            tabI={tabI}
+            setTabI={setTabI}
         />
     )
 }

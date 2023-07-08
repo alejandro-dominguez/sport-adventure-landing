@@ -26,7 +26,7 @@ body {
 }
 
 nav li svg {
-	@apply ml-3 text-white/60 -rotate-90 drop-shadow transition-all duration-100 ease-out;
+	@apply ml-3 text-white/60 -rotate-90 drop-shadow transition-all duration-100 ease-in-out;
 }
 
 textarea {
@@ -77,14 +77,15 @@ textarea::-webkit-scrollbar {
 	.landing-nav-li {
 		@apply relative flex flex-col justify-center items-start h-full font-AirBnbCerealMedium
 		uppercase tracking-wider text-[0.9rem] leading-5 text-white cursor-pointer 
-		transition-all duration-[350ms] ease-out;
+		transition-all duration-[350ms] ease-in-out;
 	}
 
 	.nav-item {
-		@apply flex items-center px-5 h-full text-center transition-all duration-[350ms] ease-out;
+		@apply flex items-center px-5 h-full text-center transition-all duration-[350ms] ease-in-out;
 	}
 
-	.nav-item:hover {
+	.nav-item:hover,
+	.nav-item:focus {
 		box-shadow: inset 0 0 0 2.5px #fffffff2;
 		text-shadow: 3px 3px 3px #00012933;
 		@apply bg-[#D4021F];
@@ -113,15 +114,17 @@ textarea::-webkit-scrollbar {
 	}
 
 	.nav-dropdown-item-text {
-		@apply w-full block py-3 tracking-widest transition-all ease-out;
+		@apply w-full block py-3 tracking-widest transition-all ease-in-out;
 	}
 
-	.nav-dropdown-item-text:hover {
+	.nav-dropdown-item-text:hover,
+	.nav-dropdown-item-text:focus {
 		text-shadow: 3px 3px 3px #0001294d;
 		@apply bg-[#f5001de4];
 	}
 
-	.nav-dropdown-item-text.px-7:hover {
+	.nav-dropdown-item-text.px-7:hover,
+	.nav-dropdown-item-text.px-7:focus {
 		box-shadow: inset 4px 0 5px -2px #00001abf;
 	}
 
@@ -143,7 +146,7 @@ textarea::-webkit-scrollbar {
 	.landing-h1-btn {
 		box-shadow: 0 0 2px 1px #d4021e05;
 		@apply absolute top-[16rem] left-1/2 -translate-x-1/2 px-5 py-3 -mt-3 rounded-md
-		bg-black/80 text-center z-10 transition-all duration-200 ease-out cursor-pointer
+		bg-black/80 text-center z-10 transition-all duration-200 ease-in-out cursor-pointer
 		border-[3.8px] border-[#f40e0e] border-opacity-80;
 	}
 	
@@ -151,14 +154,16 @@ textarea::-webkit-scrollbar {
 		filter: drop-shadow(-2px -2px 3px #d4021e4d);
 		text-shadow: 1px 1px 3px #d4021e4d;
 		@apply font-AirBnbCerealBold uppercase text-[1.45rem] tracking-[0.05rem] leading-[1.7rem]
-		text-white/95 transition-all duration-200 ease-out;
+		text-white/95 transition-all duration-200 ease-in-out;
 	}
 
-	.landing-h1-btn:hover {
+	.landing-h1-btn:hover,
+	.landing-h1-btn:focus {
 		@apply bg-black/95 border-opacity-95;
 	}
 
-	.landing-h1-btn:hover .landing-h1 {
+	.landing-h1-btn:hover .landing-h1,
+	.landing-h1-btn:focus .landing-h1 {
 		box-shadow: 0 0 3px 2px #00001abf;
 		@apply text-white;
 	}
@@ -169,19 +174,21 @@ textarea::-webkit-scrollbar {
 	}
 
 	.hero-carousel-btn {
-		@apply absolute top-[9.2rem] p-16 text-[2.25rem] text-[#ffffffd9] transition-all ease-out;
+		@apply absolute top-[9.2rem] p-16 text-[2.25rem] text-[#ffffffd9] transition-all ease-in-out;
 	}
 
-	.hero-carousel-btn:hover {
+	.hero-carousel-btn:hover,
+	.hero-carousel-btn:focus {
 		@apply text-white;
 	}
 
 	.hero-carousel-icon {
 		filter: drop-shadow(2.5px 4.5px 1.5px #02061780);
-		@apply transition-all ease-out;
+		@apply transition-all ease-in-out;
 	}
 
-	.hero-carousel-btn:hover .hero-carousel-icon {
+	.hero-carousel-btn:hover .hero-carousel-icon,
+	.hero-carousel-btn:focus .hero-carousel-icon {
 		filter: drop-shadow(2.5px 4.5px 1.5px #030617e6);
 	}
 
@@ -197,19 +204,21 @@ textarea::-webkit-scrollbar {
 		box-shadow: 0 0 3px 2px #00001a2b, inset 0 0 3px 2px #0001292b;
 		@apply absolute  top-[16.55rem] left-1/2 -translate-x-1/2 grid place-items-center
 		py-[0.675rem] px-[1.375rem] rounded-md bg-[#eb0a1de6] text-white tracking-[0.089rem]
-		font-AirBnbCerealBold uppercase text-[0.985rem] transition-all ease-out duration-100;
+		font-AirBnbCerealBold uppercase text-[0.985rem] transition-all ease-in-out duration-100;
 	}
 
-	.hero-carousel-scrolling-btn:hover {
+	.hero-carousel-scrolling-btn:hover,
+	.hero-carousel-scrolling-btn:focus {
 		@apply bg-[#f2f2f2d9] text-black;
 	}
 	
 	.hero-carousel-scrolling-btn span {
 		text-shadow: 1.75px 1.75px 5px #00000012;
-		@apply transition-all ease-out;
+		@apply transition-all ease-in-out;
 	}
 
-	.hero-carousel-scrolling-btn:hover span {
+	.hero-carousel-scrolling-btn:hover span,
+	.hero-carousel-scrolling-btn:focus span {
 		text-shadow: .75px .75px .75px #000000;
 	}
 	
@@ -246,7 +255,7 @@ textarea::-webkit-scrollbar {
 		box-shadow: 0 0 3px 2px #00000066, inset .5px .5px 3px 4px #00000080;
 		filter: brightness(1.0055) contrast(1.005) saturate(1.15) grayscale(0);
 		@apply absolute aspect-[3/4.03] inset-0 bg-cover bg-center rounded-md transition-all
-		ease-out duration-[250ms];
+		ease-in-out duration-[250ms];
 	}
 
 	.product-card-img.hide {
@@ -257,7 +266,7 @@ textarea::-webkit-scrollbar {
 	.product-card-title-container {
 		filter: drop-shadow(3px 3px 3px #00000080);
 		@apply absolute h-full w-full flex flex-col items-center justify-center text-white transition-all
-		duration-[250ms] ease-out cursor-pointer z-10 pointer-events-auto opacity-100;
+		duration-[250ms] ease-in-out cursor-pointer z-10 pointer-events-auto opacity-100;
 	}
 
 	.product-card-title-container.hide {
@@ -269,56 +278,61 @@ textarea::-webkit-scrollbar {
 		text-shadow: -3px -5px 7px #00000033;
 		filter: drop-shadow(3px 4px 5px #00000033);
 		@apply mt-[.6rem] text-[1.3rem] font-AirBnbCerealMedium border-b-[3px] border-[#f40e0e]
-		border-opacity-70 transition-all duration-[250ms] ease-out;
+		border-opacity-70 transition-all duration-[250ms] ease-in-out;
 	}
 	
 	.product-card-icon {
 		filter: brightness(.9) contrast(1.2) saturate(1.5);
 		box-shadow: 0 0 1px 3px #e0e0e0f2;
-		@apply ml-4 mb-2 text-[1.35rem] text-[#38b0ff] transition-all ease-out duration-[250ms] rounded-full;
+		@apply ml-4 mb-2 text-[1.35rem] text-[#38b0ff] transition-all ease-in-out duration-[250ms] rounded-full;
 	}
 	
 	.product-card-hover-btn {
 		filter: drop-shadow(3px 4px 5px #0000001a);
 		box-shadow: inset .7px .7px 1.5px 3px #000000d9;
 		@apply relative h-0 aspect-square rounded-full bg-[#24a324] opacity-0 transition-all
-		ease-out duration-[250ms];
+		ease-in-out duration-[250ms];
 	}
 
 	.product-card-hover-icon {
 		filter: drop-shadow(1px 1px 2px #0000001a);
 		@apply absolute top-1/2 -translate-y-1/2 translate-x-1/2 right-1/2 text-[#010702cc]
-		text-[1.1rem] transition-all ease-out duration-[250ms] opacity-0;
+		text-[1.1rem] transition-all ease-in-out duration-[250ms] opacity-0;
 	}
 	
 	/*////////////////////////////////////////////////////*/
 	/*//////****  CARD TITLE HOVER STYLES  //////////******/
 	/*////////////////////////////////////////////////////*/
 	
-	.product-card-title-container:hover + .product-card-img {
+	.product-card-title-container:hover + .product-card-img,
+	.product-card-title-container:focus + .product-card-img {
 		box-shadow: 0 0 5px 2px #330000b3, inset .5px .5px 3px 4px #00000080;
 		filter: brightness(1) contrast(1) saturate(1) grayscale(.5);
 	}
 
-	.product-card-title-container:hover .product-card-title {
+	.product-card-title-container:hover .product-card-title,
+	.product-card-title-container:focus .product-card-title {
 		text-shadow: -3px -5px 7px #0000008c;
 		filter: drop-shadow(3px 4px 5px #0000008c);
 		@apply border-opacity-80;
 	}
 
-	.product-card-title-container:hover .product-card-icon {
+	.product-card-title-container:hover .product-card-icon,
+	.product-card-title-container:focus .product-card-icon {
 		filter: brightness(1.3) contrast(1.1) saturate(1.2);
 		box-shadow: 0 0 1px 3px #ffffffd6;
 		@apply text-[#1e2b9b];
 	}
 
-	.product-card-title-container:hover .product-card-hover-btn {
+	.product-card-title-container:hover .product-card-hover-btn,
+	.product-card-title-container:focus .product-card-hover-btn {
 		filter: drop-shadow(3px 4px 5px #0000001a);
 		box-shadow: inset .7px .7px 1.5px 3px #000000d9;
 		@apply h-[2.1rem] opacity-100;
 	}
 
-	.product-card-title-container:hover .product-card-hover-icon {
+	.product-card-title-container:hover .product-card-hover-icon,
+	.product-card-title-container:focus .product-card-hover-icon {
 		filter: drop-shadow(1px 1px 2px #0000001a);
 		@apply opacity-100;
 	}
@@ -330,7 +344,7 @@ textarea::-webkit-scrollbar {
 
 	.product-card-content-container {
 		@apply absolute w-full h-full opacity-0 -translate-x-4 transition-all duration-[250ms]
-		ease-out pointer-events-none;
+		ease-in-out pointer-events-none;
 	}
 
 	.product-card-content-container.show {
@@ -339,19 +353,20 @@ textarea::-webkit-scrollbar {
 
 	.product-card-close-container {
 		@apply absolute top-0 right-0 w-[4.3rem] h-[4rem] flex justify-end pr-5 pt-[.85rem] -translate-x-4
-		cursor-pointer opacity-0 transition-all duration-[250ms] ease-out pointer-events-none z-10;
+		cursor-pointer opacity-0 transition-all duration-[250ms] ease-in-out pointer-events-none z-10;
 	}
 
 	.product-card-close {
 		box-shadow: 0 0 1px 2.25px #ffffffd6;
-		@apply text-[1.475rem] text-[#e22222f2] rounded-full transition-all ease-out;
+		@apply text-[1.475rem] text-[#e22222f2] rounded-full transition-all ease-in-out;
 	}
 
 	.product-card-close-container.show {
 		@apply opacity-100 pointer-events-auto -translate-x-0;
 	}
 
-	.product-card-close-container:hover .product-card-close {
+	.product-card-close-container:hover .product-card-close,
+	.product-card-close-container:focus .product-card-close {
 		box-shadow: 0 0 1px 2.25px #c5c5c5f2;
 		@apply text-[#ee2c2c];
 	}
@@ -388,21 +403,23 @@ textarea::-webkit-scrollbar {
 	.product-card-btn {
 		box-shadow: 2.7px 2.7px 1.6px 2px #af040c4d;
 		@apply w-fit bg-black/[.68] border-[#f40e0e] border-[2.95px] rounded-md border-opacity-[.825]
-		drop-shadow-md shadow-black transition-all ease-out;
+		drop-shadow-md shadow-black transition-all ease-in-out;
 	}
 	
 	.product-card-btn-span {
 		text-shadow: 1.25px 1.25px 2px #f50d0d7a;
 		@apply block px-[1.2rem] py-[.5rem] font-bold text-[.9rem] tracking-[.07rem] text-white/95
-		transition-all ease-out;
+		transition-all ease-in-out;
 	}
 
-	.product-card-btn-container:hover .product-card-btn {
+	.product-card-btn-container:hover .product-card-btn,
+	.product-card-btn-container:focus .product-card-btn {
 		box-shadow: 2px 2px 1px 1.25px #af040c80;
 		@apply bg-black border-opacity-90;
 	}
 
-	.product-card-btn-container:hover .product-card-btn-span {
+	.product-card-btn-container:hover .product-card-btn-span,
+	.product-card-btn-container:focus .product-card-btn-span {
 		text-shadow: 1.25px 1.25px 2px #f50f0fbf;
 		@apply text-white;
 	}
@@ -413,7 +430,7 @@ textarea::-webkit-scrollbar {
     
 	.product-form-container {
 		@apply fixed inset-0 h-full w-full grid place-items-center opacity-0 transition-all z-30
-		duration-[350ms] ease-out bg-black/40 pointer-events-none;
+		duration-[350ms] ease-in-out bg-black/40 pointer-events-none;
 	}
 
 	.product-form-container.show {
@@ -423,7 +440,7 @@ textarea::-webkit-scrollbar {
 	.product-form-data-container {
 		box-shadow: inset 0 0 6.5px 3.25px #003eb159, 0 0 3px 2px #0a4bff0d;
 	    @apply h-[25rem] w-3/5 grid grid-cols-3 opacity-0 bg-[#0a1758] py-6 px-7 gap-7
-		rounded-md transition-all duration-[350ms] ease-out -translate-y-[2.1rem] text-white;
+		rounded-md transition-all duration-[350ms] ease-in-out -translate-y-[2.1rem] text-white;
     }
 
 	.product-form-data-container.show {
@@ -432,7 +449,7 @@ textarea::-webkit-scrollbar {
     }
 
 	.product-form-close-container {
-		@apply transition-all duration-[350ms] ease-out opacity-0 z-10 pb-8 pl-8;
+		@apply transition-all duration-[350ms] ease-in-out opacity-0 z-10 pb-8 pl-8;
 	}
 
 	.product-form-close-container.show {
@@ -441,18 +458,17 @@ textarea::-webkit-scrollbar {
 	
 	.product-form-close-btn {
 		box-shadow: 0 0 1px 3.25px #ffffffd6;
-		@apply text-[#e22222f2] text-[1.75rem] rounded-full transition-all ease-out opacity-95;
+		@apply text-[#e22222f2] text-[1.75rem] rounded-full transition-all ease-in-out opacity-95;
 	}
 
-	.product-form-close-container.show:hover .product-form-close-btn {
+	.product-form-close-container.show:hover .product-form-close-btn,
+	.product-form-close-container.show:focus .product-form-close-btn {
 		box-shadow: 0 0 1px 3.25px #c5c5c5f2;
 		@apply text-[#ee2c2c] opacity-100;
 	}
 
 	.product-form-h4 {
 		contain: content;
-		text-shadow: 1px 1px 1px #3d40ff62;
-		filter: drop-shadow(2px 2px 3px #0015d149);
 		@apply font-AirBnbCerealMedium text-[1.4rem] border-b-[3px] w-fit
 		border-[#f40e0e] border-opacity-[.7485];
     }
@@ -471,52 +487,39 @@ textarea::-webkit-scrollbar {
 	}
 
 	.product-form-input {
-		box-shadow: 1px 1px 4px 1.5px #040f2a26;
+		box-shadow: 2.2px 2.75px 4.25px .3px hsla(223, 83%, 9%, 0.35);
         @apply outline-none bg-[#04102b] rounded-md px-[.68rem] py-[.8rem] placeholder-white/[.75]
-		placeholder:tracking-wide placeholder:text-[.95rem] transition-all ease-out duration-200;
+		placeholder:tracking-wide placeholder:text-[.95rem] transition-all ease-in-out duration-300;
     }
 
-	.product-form-input:hover {
-		box-shadow: 1px 1px 4px .75px #db0000e3;
-    }
-
+	.product-form-input:hover,
 	.product-form-input:focus {
-		box-shadow: 1px 1px 4px .75px #db0000e3;
-	}
+		box-shadow: 2.2px 2.75px 4.25px .3px hsla(350, 100%, 38%, 0.84);
+    }
 
 	.product-form-submit {
 		filter: drop-shadow(2px 2px 3px #0000004d);
 		box-shadow: none;
-		@apply px-[2.05rem] py-[.575rem] rounded-md bg-[rgba(244,16,16,0.885)] transition-all ease-out
-		duration-200 grid place-items-center;
+		@apply py-[.7rem] rounded-md bg-[#c40021fd] transition-all ease-in-out duration-300 grid place-items-center;
 	}
 
 	.product-form-span {
-		filter: none;
-		@apply block font-bold text-[1.05rem] tracking-wide text-white/[.825] transition-all ease-out;
+		filter: drop-shadow(2px 2px 4px #3000004d);
+		@apply block font-bold text-[1.05rem] tracking-[0.04rem] text-white transition-all
+		duration-300 ease-in-out;
 	}
 
-	.product-form-submit:hover {
-		filter: none;
-		box-shadow: 0 0 4px 3px #f41010d2;
-		@apply bg-white/[.0001];
-	}
-
+	.product-form-submit:hover,
 	.product-form-submit:focus {
-		filter: none;
-		box-shadow: 0 0 4px 3px #f41010d2;
+		box-shadow: 0 0 2.5px 3px hsla(0, 91%, 51%, 0.825), inset 0 0 2px 1px hsla(0, 91%, 51%, 0.64);
 		@apply bg-white/[.0001];
 	}
 
-	.product-form-submit:hover .product-form-span {
-		filter: drop-shadow(1px 1px 1px #ff000080);
-		@apply text-white;
+	.product-form-submit:hover .product-form-span,
+	.product-form-submit:focus .product-form-span {
+		filter: drop-shadow(2px 2px 4px #ff00001a);
 	}
 	
-	.product-form-submit:focus .product-form-span {
-		filter: drop-shadow(1px 1px 1px #ff000080);
-		@apply text-white;
-	}
 			/*///////////////////////////////////*/			
 			
 	/*////////////////////////////////////////////////////*/
@@ -550,27 +553,29 @@ textarea::-webkit-scrollbar {
 
 	.about-us-p {
 		text-shadow: 2px 2px 3.5px #6b93ff26;
-		@apply font-light text-[.959rem] leading-[1.44];
+		@apply font-light text-[.959rem];
 	}
 
 	.about-us-cards {
 		box-shadow: inset 0 0 5px 3px #001f75df, 0 0 3px 2px #0a4bff1a;
 		@apply relative flex flex-col justify-center items-center gap-1 px-[1.15rem] bg-white/[.0001] 
-		transition-all ease-out text-center rounded-md cursor-pointer;
+		transition-all ease-in-out text-center rounded-md cursor-pointer;
 	}
 
-	.about-us-cards:hover {
+	.about-us-cards:hover,
+	.about-us-cards:focus {
 		box-shadow: inset 0 0 10px 4px #0530a5d9, 0 0 3px 2px #0a4bff06;
 		@apply bg-[#081764];
 	}
 
 	.about-us-icon {
-		filter: drop-shadow(1px 1.5px 4px #001f7513);
+		filter: drop-shadow(1px 1.5px 4px #6b93ff0d);
 		@apply absolute scale-100 -top-[1.175rem] left-1/2 -translate-x-1/2 text-[3.5rem] text-[#B20419]
-		transition-all ease-out z-10 pointer-events-none;
+		transition-all ease-in-out z-10 pointer-events-none;
 	}
 
-	.about-us-cards:hover .about-us-icon {
+	.about-us-cards:hover .about-us-icon,
+	.about-us-cards:focus .about-us-icon {
 		filter: drop-shadow(2px 2px 4px #0600294d);
 		@apply scale-[1.07] text-[#e0141fe6];
 	}
@@ -578,19 +583,21 @@ textarea::-webkit-scrollbar {
 	.about-us-h4 {
 		filter: drop-shadow(1px 1.5px 3px #0a4bff4d);
 		@apply font-AirBnbCerealLight text-[1.05rem] tracking-[.045rem] leading-[1.35] text-white pt-2 pb-1
-		transition-all ease-out pointer-events-none;
+		transition-all ease-in-out pointer-events-none;
 	}
 
-	.about-us-cards:hover .about-us-h4 {
+	.about-us-cards:hover .about-us-h4,
+	.about-us-cards:focus .about-us-h4 {
 		filter: drop-shadow(2px 3px 3px #0000144d);
 	}
 
 	.about-us-text {
 		filter: drop-shadow(1px 1.5px 3px #0a4bff4d);
-		@apply font-light text-[.98rem] leading-[1.31] transition-all ease-out pointer-events-none;
+		@apply font-light text-[.98rem] leading-[1.31] transition-all ease-in-out pointer-events-none;
 	}
 
-	.about-us-cards:hover .about-us-text {
+	.about-us-cards:hover .about-us-text,
+	.about-us-cards:focus .about-us-text {
 		filter: drop-shadow(2px 3px 3px #0000144d);
 	}
 
@@ -605,46 +612,67 @@ textarea::-webkit-scrollbar {
 			/*///////////////////////////////////*/
 
 	.services-h2 {
-		text-shadow: 2.5px 2.5px 5px #6b93ff33;
-		@apply font-AirBnbCerealBold uppercase tracking-[.001rem] text-[2rem] mt-5;
+		text-shadow: 1.2px .875px 5px #3db8ff4d;
+		@apply font-AirBnbCerealBold uppercase tracking-[.001rem] text-[2rem] mt-5 self-start;
 	}
 
 	.services-tabs-container {
-		box-shadow: inset 0 0 5px 3px #0039a3cc, 0 0 3px 2px #0a4bff17;
+		box-shadow: inset 0 0 5px 3px #0039a380, 0 0 3px 2px #0a4bff17;
 		@apply relative grid place-items-center mt-[1.35rem] bg-white/[.0001] h-[23.4rem] w-full rounded-md
-		transition-all duration-300 ease-out;
+		transition-all duration-300 ease-in-out overflow-x-hidden z-0;
 	}
 
-	.services-tabs-ul.left, .services-tabs-ul.center, .services-tabs-ul.right  {
-		@apply relative self-start flex items-center justify-evenly w-full transition-all ease-out duration-500;
+	.services-tabs-ul {
+		@apply relative self-start flex items-center justify-evenly w-[101%] cursor-pointer bg-black/5 z-10;
+	}
+
+	.services-tabs-ul::before {
+		box-shadow: inset 0 0 5px 3px #0039a3cc, 0 0 3px 2px #0a4bff17;;
+		content: '';
+		@apply absolute blur-[1.85px] h-[99.1%] w-[99.1%] border-2 border-[#0039a3cc];
+	}
+
+	.services-tabs-ul.left::after,
+	.services-tabs-ul.center::after,
+	.services-tabs-ul.right::after {
+		@apply transition-all ease-in-out duration-[280ms];
 	}
 
 	.services-tabs-ul.left::after {
 		content: '';
-		@apply absolute top-0 bottom-0 w-1/3 bg-[#0039a3cc] z-0 rounded-md left-[.15rem];
+		border-start-start-radius: 0.375rem;
+		border-start-end-radius: 0.125rem;
+		border-end-end-radius: 0.125rem;
+		border-end-start-radius: 0.375rem;
+		@apply absolute top-0 bottom-0 w-[calc(33.333333%-2px)] ml-[.12rem] mr-0 bg-[#0039a34d] right-full translate-x-[100.5%];
 	}
 
 	.services-tabs-ul.center::after {
 		content: '';
-		@apply absolute top-0 bottom-0 w-1/3 bg-[#0039a3cc] z-0 rounded-md;
+		@apply absolute top-0 bottom-0 w-[calc(33.333333%-6px)] bg-[#0039a34d] right-1/2 translate-x-1/2
+		mx-0 rounded-sm;
 	}
-	
+
 	.services-tabs-ul.right::after {
+		border-start-end-radius: 0.375rem;
+		border-start-start-radius: 0.125rem;
+		border-end-end-radius: 0.375rem;
+		border-end-start-radius: 0.125rem;
 		content: '';
-		@apply absolute top-0 bottom-0 w-1/3 bg-[#0039a3cc] z-0 rounded-md right-[.15rem];
+		@apply absolute top-0 bottom-0 w-[calc(33.333333%-2px)] bg-[#0039a34d] right-0 translate-x-0 mr-[.12rem] ml-0;
 	}
 
-	.services-tabs-li {
-		@apply relative py-[.9rem] w-1/3 grid place-items-center transition-all ease-out cursor-pointer z-10;
+	.services-tabs-li-btn {
+		@apply relative py-4 w-1/3 grid place-items-center z-10;
 	}
 
-	.services-tabs-li.middle::before {
+	.services-tabs-li-btn.middle::before {
 		content: '';
 		@apply absolute inset-0 blur-[1.85px] border-x-[3.5px] border-[#0039a3cc];
 	}
 
-	.services-tabs-li-btn {
-		filter: drop-shadow(1px 1.5px 2px #001f7545);
-		@apply font-AirBnbCerealMedium text-[1.2rem] tracking-[.045rem] text-white;
+	.services-tabs-li {
+		text-shadow: 1.2px .875px 5px #3db8ff4d;
+		@apply text-[1.33rem] tracking-[.045rem] text-white pointer-events-none mb-[.15rem];
 	}
 }
