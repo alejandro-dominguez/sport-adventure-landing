@@ -1,13 +1,14 @@
-import { useState } from 'react';
 import { AboutUs } from '.';
 
 const ThirdSection = ({
     FourthSection,
     aboutSliderImgsData,
     aboutCardsData,
-    servicesData
+    servicesData,
+    setTabIndex,
+    tabIndex
 }) => {
-    const [tabIndex, setTabIndex] = useState(1)
+
 
     return (
         <>
@@ -28,6 +29,7 @@ const ThirdSection = ({
             <FourthSection
                 servicesData={servicesData}
                 setTabIndex={setTabIndex}
+                tabIndex={tabIndex}
             />
         </div>
         </>

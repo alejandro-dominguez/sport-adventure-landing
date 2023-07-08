@@ -159,7 +159,8 @@ const LandingPage = () => {
             },
         ]
     )
-    
+    const [tabIndex, setTabIndex] = useState(1)
+
     return (
         <div className='app-container'>
             <div className='snap-start'>
@@ -176,6 +177,8 @@ const LandingPage = () => {
                 aboutSliderImgsData={aboutSliderData}
                 aboutCardsData={aboutCardsData}
                 servicesData={servicesData}
+                setTabIndex={setTabIndex}
+                tabIndex={tabIndex}
             />
             <LandingFooter />
         </div>

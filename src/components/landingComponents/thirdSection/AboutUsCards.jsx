@@ -5,17 +5,23 @@ import {
 } from 'react-icons/bs';
 import { scrollToElement } from '../../../utilities';
 
-const AboutUsCards = ({ data }) => {
-    const scrollAndDisplayTab = (e) => {
-        const targetElement = e.target
-        console.log(targetElement)
+const AboutUsCards = ({
+    data,
+    setTabIndex,
+    tabIndex
+}) => {
+
+    const displayTabs = (e) => {
+        const elementId = e.target.id
+        setTabIndex(elementId.slice(-1))
     }
     
     return (
         <button
-            type='button' 
+            id={`${data.id}`}
+            type='button'
             className='about-us-cards'
-            onClick={(e) => scrollAndDisplayTab(e)}
+            onClick={(e) => displayTabs(e)}
         >
             {
                 data.id === 'about-us-1' ?
@@ -26,7 +32,9 @@ const AboutUsCards = ({ data }) => {
                     <BsXDiamondFill className='about-us-icon' />
             }
             <h4 className='about-us-h4'>
-                {data.title1}<br />{data.title2}
+                {data.title1}
+                <br />
+                {data.title2}
             </h4>
             <p className='about-us-text'>
                 {data.text}

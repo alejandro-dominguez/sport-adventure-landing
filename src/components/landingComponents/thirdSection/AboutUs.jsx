@@ -6,7 +6,8 @@ import {
 const AboutUs = ({
     aboutSliderImgsData,
     aboutCardsData,
-    setTabIndex
+    setTabIndex,
+    tabIndex
 }) => {
     return (
         <div className='pt-[4.6rem] bg-[#B50016]'>
@@ -20,7 +21,7 @@ const AboutUs = ({
                             <span className='block w-full text-[1.5rem]'>
                                 Encuentra tu
                             </span>
-                            <span className='block w-full text-[1.387rem]'>
+                            <span className='block w-full text-[1.37rem]'>
                                 vehículo ideal
                             </span>
                             <span className='block w-full text-[1.411rem]'>
@@ -34,7 +35,12 @@ const AboutUs = ({
                     </div>
                     {aboutCardsData.map(data => {
                         return (
-                            <AboutUsCards data={data} key={data.id} setTabIndex={setTabIndex} />
+                            <AboutUsCards
+                                data={data}
+                                key={data.id}
+                                setTabIndex={setTabIndex}
+                                tabIndex={tabIndex}
+                            />
                         )
                     })}
                 </div>

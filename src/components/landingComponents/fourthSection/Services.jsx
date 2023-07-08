@@ -7,14 +7,15 @@ const Services = ({
         <section className='pt-[4.6rem] bg-[#0a0c20]'>
             <div className='h-screen flex flex-col items-center justify-start bg-[#070714] text-white px-16 z-0'>
                 <h2 className='services-h2'>
-                    Soluciones a medida
+                    soluciones a tu medida
                 </h2>
                 <div className='services-tabs-container'>
-                    <ul className='services-tabs-ul'>
+                    <ul className="services-tabs-ul">
                         <li className='services-tabs-li'>
                             <button
                                 type='button'
                                 className='services-tabs-li-btn'
+                                onClick={setTabIndex(1)}
                             >
                                 Nuestros vehículos
                             </button>
@@ -23,6 +24,7 @@ const Services = ({
                             <button
                                 type='button'
                                 className='services-tabs-li-btn'
+                                onClick={setTabIndex(1)}
                             >
                                 Service & taller
                             </button>
@@ -31,6 +33,7 @@ const Services = ({
                             <button
                                 type='button'
                                 className='services-tabs-li-btn'
+                                onClick={setTabIndex(1)}
                             >
                                 Usados
                             </button>

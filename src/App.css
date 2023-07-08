@@ -544,12 +544,12 @@ textarea::-webkit-scrollbar {
 	}
 
 	.about-us-h3 {
-		text-shadow: 2px 2px 3.5px #6b93ff5e;
-		@apply font-AirBnbCerealMedium leading-[1.275] tracking-[0.03rem] uppercase;
+		text-shadow: 2px 2px 3.5px #6b93ff26;
+		@apply font-AirBnbCerealMedium leading-[1.3] tracking-[0.09rem] uppercase;
 	}
 
 	.about-us-p {
-		text-shadow: 2px 2px 3.5px #6b93ff5e;
+		text-shadow: 2px 2px 3.5px #6b93ff26;
 		@apply font-light text-[.959rem] leading-[1.44];
 	}
 
@@ -565,33 +565,33 @@ textarea::-webkit-scrollbar {
 	}
 
 	.about-us-icon {
-		filter: drop-shadow(1px 1.5px 4px #001f7533);
+		filter: drop-shadow(1px 1.5px 4px #001f7513);
 		@apply absolute scale-100 -top-[1.175rem] left-1/2 -translate-x-1/2 text-[3.5rem] text-[#B20419]
-		transition-all ease-out z-10;
+		transition-all ease-out z-10 pointer-events-none;
 	}
 
 	.about-us-cards:hover .about-us-icon {
-		filter: drop-shadow(2px 2px 4px #0600298c);
+		filter: drop-shadow(2px 2px 4px #0600294d);
 		@apply scale-[1.07] text-[#e0141fe6];
 	}
 
 	.about-us-h4 {
-		filter: drop-shadow(1px 1.5px 3px #0c4dff6c);
+		filter: drop-shadow(1px 1.5px 3px #0a4bff4d);
 		@apply font-AirBnbCerealLight text-[1.05rem] tracking-[.045rem] leading-[1.35] text-white pt-2 pb-1
-		transition-all ease-out;
+		transition-all ease-out pointer-events-none;
 	}
 
 	.about-us-cards:hover .about-us-h4 {
-		filter: drop-shadow(2px 3px 3px #00001280);
+		filter: drop-shadow(2px 3px 3px #0000144d);
 	}
 
 	.about-us-text {
-		filter: drop-shadow(1px 1.5px 3px #0c4dff6c);
-		@apply font-light text-[.98rem] leading-[1.31] transition-all ease-out;
+		filter: drop-shadow(1px 1.5px 3px #0a4bff4d);
+		@apply font-light text-[.98rem] leading-[1.31] transition-all ease-out pointer-events-none;
 	}
 
 	.about-us-cards:hover .about-us-text {
-		filter: drop-shadow(2px 3px 3px hsla(240, 100%, 4%, 0.75));
+		filter: drop-shadow(2px 3px 3px #0000144d);
 	}
 
 			/*///////////////////////////////////*/
@@ -605,8 +605,8 @@ textarea::-webkit-scrollbar {
 			/*///////////////////////////////////*/
 
 	.services-h2 {
-		text-shadow: 2.5px 2.5px 3.5px #6b93ff5e;
-		@apply font-AirBnbCerealBold uppercase tracking-[.008rem] text-[2rem] mt-5;
+		text-shadow: 2.5px 2.5px 5px #6b93ff33;
+		@apply font-AirBnbCerealBold uppercase tracking-[.001rem] text-[2rem] mt-5;
 	}
 
 	.services-tabs-container {
@@ -615,18 +615,23 @@ textarea::-webkit-scrollbar {
 		transition-all duration-300 ease-out;
 	}
 
-	.services-tabs-ul {
-		@apply relative self-start flex items-center justify-evenly w-full;
+	.services-tabs-ul.left, .services-tabs-ul.center, .services-tabs-ul.right  {
+		@apply relative self-start flex items-center justify-evenly w-full transition-all ease-out duration-500;
 	}
 
-	.services-tabs-ul::before {
-		content: '';
-		@apply absolute inset-0 blur-[1.85px] border-b-[3.5px] border-[#0039a3cc];
-	}
-
-	.services-tabs-ul::after {
+	.services-tabs-ul.left::after {
 		content: '';
 		@apply absolute top-0 bottom-0 w-1/3 bg-[#0039a3cc] z-0 rounded-md left-[.15rem];
+	}
+
+	.services-tabs-ul.center::after {
+		content: '';
+		@apply absolute top-0 bottom-0 w-1/3 bg-[#0039a3cc] z-0 rounded-md;
+	}
+	
+	.services-tabs-ul.right::after {
+		content: '';
+		@apply absolute top-0 bottom-0 w-1/3 bg-[#0039a3cc] z-0 rounded-md right-[.15rem];
 	}
 
 	.services-tabs-li {
