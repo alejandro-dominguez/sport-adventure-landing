@@ -5,7 +5,6 @@ const Services = ({
 }) => {
     const setTabs = (e) => {
         const elIndex = Number(e.target.id.slice(-1))
-        console.log(elIndex);
         const checkedIndex = checkCondition(elIndex)
         setTabI(checkedIndex)
     }
@@ -36,14 +35,14 @@ const Services = ({
                             className='services-tabs-li-btn'
                             onClick={(e) => setTabs(e)}
                         >
-                            <li className='services-tabs-li'>
+                            <li className={'services-tabs-li'}>
                                 Nuestros vehículos
                             </li>
                         </button>
                         <button
                             id='services-tabs-2'
                             type='button'
-                            className='services-tabs-li-btn middle'
+                            className='services-tabs-li-btn center'
                             onClick={(e) => setTabs(e)}
                         >
                             <li className='services-tabs-li'>
@@ -53,7 +52,7 @@ const Services = ({
                         <button
                             id='services-tabs-3'
                             type='button'
-                            className='services-tabs-li-btn'
+                            className='services-tabs-li-btn hover'
                             onClick={(e) => setTabs(e)}
                         >
                             <li className='services-tabs-li'>

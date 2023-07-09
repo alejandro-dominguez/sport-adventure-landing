@@ -169,87 +169,143 @@ const NavBar = ({ heroCarouselImgsData }) => {
     return (
         <>
         <nav className='landing-nav'>
-            <div className='w-36 h-full grid place-items-center cursor-pointer' onClick={() => handleLogo()}>
+            <div
+                className='w-36 h-full grid place-items-center cursor-pointer'
+                onClick={() => handleLogo()}
+                tabIndex='0'
+            >
                 <img
                     src={logo}
                     alt='Logo Sport Adventure'
                     className='block w-full'
+                    tabIndex='0'
                 />
             </div>
             <ul className='flex items-center h-full'>
-                <li className='landing-nav-li nav-item px-5' onClick={() => handleAbout()}>
+                <li
+                    className='landing-nav-li nav-item px-5'
+                    onClick={() => handleAbout()}
+                    tabIndex='0'
+                >
                     <span>
                         nosotros
                     </span>
                 </li>
                 <li className='landing-nav-li'>
-                    <div className="nav-item" onClick={() => openFirstMenu()}>
+                    <div
+                        className='nav-item'
+                        onClick={() => openFirstMenu()}
+                        tabIndex='0'
+                    >
                         <span>
                             Motos
                         </span>
                         <BsCaretDownFill
                             className={firstDropDown ? 'rotate-0 text-white'
-                            : 'text-white/60 -rotate-90'}
+                                : 'text-white/60 -rotate-90'
+                            }
                         />
                     </div>
                     <div 
-                        className={firstDropDown ? 'nav-dropdown-container bikes flex flex-col'
-                        : "nav-dropdown-container bikes hidden"}
+                        className={
+                            firstDropDown ? 'nav-dropdown-container bikes flex flex-col'
+                            : 'nav-dropdown-container bikes hidden'
+                        }
                     >
-                        <span className='nav-dropdown-item' onClick={() => closeFirstMenu()}>
+                        <span
+                            className='nav-dropdown-item'
+                            onClick={() => closeFirstMenu()}
+                            tabIndex='0'
+                        >
                             <span className='nav-dropdown-item-text'>
                                 KTM
                             </span>
                         </span>
                         <div className='nav-dropdown-item relative'>
                             <div>
-                                <span className='nav-dropdown-item-text' onClick={() => handleDropdownBtn()}>
+                                <span
+                                    className='nav-dropdown-item-text'
+                                    onClick={() => handleDropdownBtn()}
+                                    tabIndex='0'
+                                >
                                     <div className='flex items-center justify-center'>
                                         Moto<br />Plex
                                         <BsCaretDownFill
-                                            className={!dropDownLayer ? 'rotate-0 text-white/60 ml-1'
-                                            : 'ml-1 text-white'}
+                                            className={
+                                                !dropDownLayer ? 'rotate-0 text-white/60 ml-1'
+                                                : 'ml-1 text-white'
+                                            }
                                         />
                                     </div>
                                 </span>
                             </div>
                             <div
-                                className={!dropDownLayer ? 'nav-dropdown-item-layer hidden'
-                                : 'nav-dropdown-item-layer flex flex-col'}
+                                className={
+                                    !dropDownLayer ? 'nav-dropdown-item-layer hidden'
+                                    : 'nav-dropdown-item-layer flex flex-col'
+                                }
                             >
                                 <span className='nav-dropdown-item'>
-                                    <span className='nav-dropdown-item-text px-7' onClick={() => closeFirstMenu()}>
+                                    <span
+                                        className='nav-dropdown-item-text px-7'
+                                        onClick={() => closeFirstMenu()}
+                                        tabIndex='0'
+                                    >
                                         Vespa
                                     </span>
                                 </span>
                                 <span className='nav-dropdown-item'>
-                                    <span className='nav-dropdown-item-text px-7' onClick={() => closeFirstMenu()}>
+                                    <span
+                                        className='nav-dropdown-item-text px-7'
+                                        onClick={() => closeFirstMenu()}
+                                        tabIndex='0'
+                                    >
                                         Aprilia
                                     </span> 
                                 </span>
                                 <span className='nav-dropdown-item'>
-                                    <span className='nav-dropdown-item-text px-7' onClick={() => closeFirstMenu()}>
+                                    <span
+                                        className='nav-dropdown-item-text px-7'
+                                        onClick={() => closeFirstMenu()}
+                                        tabIndex='0'
+                                    >
                                         Moto<br />Guzzi
                                     </span> 
                                 </span>
                             </div>
                         </div>
-                        <span className='nav-dropdown-item' onClick={() => closeFirstMenu()}>
+                        <span
+                            className='nav-dropdown-item'
+                            onClick={() => closeFirstMenu()}
+                            tabIndex='0'
+                        >
                             <span className='nav-dropdown-item-text'>
                                 Husqvarna
                             </span>
                         </span>
-                        <span className='nav-dropdown-item' onClick={() => closeFirstMenu()}>
+                        <span
+                            className='nav-dropdown-item'
+                            onClick={() => closeFirstMenu()}
+                            tabIndex='0'
+                        >
                             <span className='nav-dropdown-item-text'>
                                 Moto<br />Morini
                             </span>
                         </span>
-                        <span className='nav-dropdown-item' onClick={() => closeFirstMenu()}>
+                        <span
+                            className='nav-dropdown-item'
+                            onClick={() => closeFirstMenu()}
+                            tabIndex='0'
+                        >
                             <span className='nav-dropdown-item-text'>
                                 Royal<br />Enfield
                             </span>
                         </span>
-                        <span className='nav-dropdown-item' onClick={() => closeFirstMenu()}>
+                        <span
+                            className='nav-dropdown-item'
+                            onClick={() => closeFirstMenu()}
+                            tabIndex='0'
+                        >
                             <span className='nav-dropdown-item-text'>
                                 Super<br />Soco
                             </span>
@@ -257,25 +313,39 @@ const NavBar = ({ heroCarouselImgsData }) => {
                     </div>
                 </li>
                 <li className='landing-nav-li'>
-                    <div className="nav-item" onClick={() => openSecondMenu()}>
+                    <div
+                        className='nav-item'
+                        onClick={() => openSecondMenu()}
+                        tabIndex='0'
+                    >
                         <span>
                             ATV /<br />UTV / SSV
                         </span>
                         <BsCaretDownFill
                             className={secondDropDown ? 'rotate-0 text-white'
-                            : 'text-white/60 -rotate-90'}
+                                : 'text-white/60 -rotate-90'
+                            }
                         />
                     </div>
                     <div
                         className={secondDropDown ? 'nav-dropdown-container off-road flex flex-col'
-                        : 'nav-dropdown-container off-road hidden'}
+                            : 'nav-dropdown-container off-road hidden'
+                        }
                     >
-                        <span className='nav-dropdown-item' onClick={() => closeSecondMenu()}>
+                        <span
+                            className='nav-dropdown-item'
+                            onClick={() => closeSecondMenu()}
+                            tabIndex='0'
+                        >
                             <span className='nav-dropdown-item-text'>
                                 Can-am
                             </span>
                         </span>
-                        <span className='nav-dropdown-item' onClick={() => closeSecondMenu()}>
+                        <span
+                            className='nav-dropdown-item'
+                            onClick={() => closeSecondMenu()}
+                            tabIndex='0'
+                        >
                             <span className='nav-dropdown-item-text'>
                                 Cf moto
                             </span>
@@ -283,35 +353,57 @@ const NavBar = ({ heroCarouselImgsData }) => {
                     </div>
                 </li>
                 <li className='landing-nav-li'>
-                    <div className='nav-item' onClick={() => openThirdMenu()}>
+                    <div
+                        className='nav-item'
+                        onClick={() => openThirdMenu()}
+                        tabIndex='0'
+                    >
                         <span>
                             Concesionaria
                         </span>
                         <BsCaretDownFill 
                             className={thirdDropDown ? 'rotate-0 text-white'
-                            : 'text-white/60 -rotate-90'}
+                                : 'text-white/60 -rotate-90'
+                            }
                         />
                     </div>
                     <div 
                         className={thirdDropDown ? 'nav-dropdown-container inst flex flex-col'
-                        : 'nav-dropdown-container off-road hidden'}
+                            : 'nav-dropdown-container off-road hidden'
+                        }
                     >
-                        <span className='nav-dropdown-item' onClick={() => closeThirdMenu()}>
+                        <span
+                            className='nav-dropdown-item'
+                            onClick={() => closeThirdMenu()}
+                            tabIndex='0'
+                        >
                             <span className='nav-dropdown-item-text'>
                                 Postventa
                             </span>
                         </span>
-                        <span className='nav-dropdown-item' onClick={() => closeThirdMenu()}>
+                        <span
+                            className='nav-dropdown-item'
+                            onClick={() => closeThirdMenu()}
+                            tabIndex='0'
+                        >
                             <span className='nav-dropdown-item-text'>
                                 Shop
                             </span>
                         </span>
-                        <span className='nav-dropdown-item' onClick={() => closeThirdMenu()}>
+                        <span
+                            className='nav-dropdown-item'
+                            onClick={() => closeThirdMenu()}
+                            tabIndex='0'
+                        >
                             <span className='nav-dropdown-item-text'>
                                 Usados
                             </span>
                         </span>
-                        <span className='nav-dropdown-item' onClick={() => closeThirdMenu()}>
+                        <span
+                            className='nav-dropdown-item'
+                            onClick={() => closeThirdMenu()}
+                            tabIndex='0'
+                        >
                             <span className='nav-dropdown-item-text'>
                                 Eventos
                             </span>

@@ -69,7 +69,7 @@ textarea::-webkit-scrollbar {
 			/*///////////////////////////////////*/
 
 	.landing-nav {
-		box-shadow: 0 2.5px 5px 0 #0000004d;
+		box-shadow: 0 2.5px 5px 0 #00000033;
 		@apply fixed top-0 left-0 right-0 h-[4.75rem] bg-[#0f1129] flex items-center
 		justify-between px-16 py-2 z-30;
 	}
@@ -92,8 +92,8 @@ textarea::-webkit-scrollbar {
 	}
 
 	.nav-dropdown-container {
-		box-shadow: 1px 3px 4px 2px #0306174d;
-		filter: drop-shadow(3px 3px 3px #0306174d);
+		box-shadow: 1px 3px 4px 2px #03061726;
+		filter: drop-shadow(3px 3px 3px #03061726);
 		@apply absolute top-[4.281rem] left-0 bg-[#0f1129] text-sm text-center leading-4 z-10;
 	}
 
@@ -119,17 +119,17 @@ textarea::-webkit-scrollbar {
 
 	.nav-dropdown-item-text:hover,
 	.nav-dropdown-item-text:focus {
-		text-shadow: 3px 3px 3px #0001294d;
+		text-shadow: 3px 3px 3px #00001a80;
 		@apply bg-[#f5001de4];
 	}
 
 	.nav-dropdown-item-text.px-7:hover,
 	.nav-dropdown-item-text.px-7:focus {
-		box-shadow: inset 4px 0 5px -2px #00001abf;
+		box-shadow: inset 4px 0 5px -2px #00001a80;
 	}
 
 	.nav-dropdown-item-layer {
-		box-shadow: inset 4px 0 5px -2px #00001abf;
+		box-shadow: inset 4px 0 5px -2px #00001a80;;
 		@apply absolute left-[7.6rem] top-0 bg-[#0f1129];
 	}
 
@@ -284,14 +284,14 @@ textarea::-webkit-scrollbar {
 	.product-card-icon {
 		filter: brightness(.9) contrast(1.2) saturate(1.5);
 		box-shadow: 0 0 1px 3px #e0e0e0f2;
-		@apply ml-4 mb-2 text-[1.35rem] text-[#38b0ff] transition-all ease-in-out duration-[250ms] rounded-full;
+		@apply ml-4 mb-2 text-[1.35rem] text-[#38b0ff] transition-all ease-in-out duration-[210ms] rounded-full;
 	}
 	
 	.product-card-hover-btn {
 		filter: drop-shadow(3px 4px 5px #0000001a);
 		box-shadow: inset .7px .7px 1.5px 3px #000000d9;
 		@apply relative h-0 aspect-square rounded-full bg-[#24a324] opacity-0 transition-all
-		ease-in-out duration-[250ms];
+		ease-in-out duration-200;
 	}
 
 	.product-card-hover-icon {
@@ -343,7 +343,7 @@ textarea::-webkit-scrollbar {
 	/*////////////////////////////////////////////////////*/
 
 	.product-card-content-container {
-		@apply absolute w-full h-full opacity-0 -translate-x-4 transition-all duration-[250ms]
+		@apply absolute w-full h-full opacity-0 -translate-x-4 transition-all duration-300
 		ease-in-out pointer-events-none;
 	}
 
@@ -353,12 +353,12 @@ textarea::-webkit-scrollbar {
 
 	.product-card-close-container {
 		@apply absolute top-0 right-0 w-[4.3rem] h-[4rem] flex justify-end pr-5 pt-[.85rem] -translate-x-4
-		cursor-pointer opacity-0 transition-all duration-[250ms] ease-in-out pointer-events-none z-10;
+		cursor-pointer opacity-0 transition-all duration-300 ease-in-out pointer-events-none z-10;
 	}
 
 	.product-card-close {
 		box-shadow: 0 0 1px 2.25px #ffffffd6;
-		@apply text-[1.475rem] text-[#e22222f2] rounded-full transition-all ease-in-out;
+		@apply text-[1.475rem] text-[#e22222f2] rounded-full transition-all ease-in-out duration-[160ms];
 	}
 
 	.product-card-close-container.show {
@@ -458,7 +458,7 @@ textarea::-webkit-scrollbar {
 	
 	.product-form-close-btn {
 		box-shadow: 0 0 1px 3.25px #ffffffd6;
-		@apply text-[#e22222f2] text-[1.75rem] rounded-full transition-all ease-in-out opacity-95;
+		@apply text-[#e22222f2] text-[1.75rem] rounded-full transition-all duration-[160ms] ease-in-out opacity-95;
 	}
 
 	.product-form-close-container.show:hover .product-form-close-btn,
@@ -487,31 +487,32 @@ textarea::-webkit-scrollbar {
 	}
 
 	.product-form-input {
-		box-shadow: 2.2px 2.75px 4.25px .3px hsla(223, 83%, 9%, 0.35);
+		box-shadow: 1.5px 1.5px 2px .2px #040f2ab3;
         @apply outline-none bg-[#04102b] rounded-md px-[.68rem] py-[.8rem] placeholder-white/[.75]
-		placeholder:tracking-wide placeholder:text-[.95rem] transition-all ease-in-out duration-300;
+		placeholder:tracking-wide placeholder:text-[.95rem] transition-all ease-in-out duration-[225ms];
     }
 
 	.product-form-input:hover,
 	.product-form-input:focus {
-		box-shadow: 2.2px 2.75px 4.25px .3px hsla(350, 100%, 38%, 0.84);
+		box-shadow: 1.5px 1.5px 2px .2px #e60026cc;
     }
 
 	.product-form-submit {
 		filter: drop-shadow(2px 2px 3px #0000004d);
 		box-shadow: none;
-		@apply py-[.7rem] rounded-md bg-[#c40021fd] transition-all ease-in-out duration-300 grid place-items-center;
+		@apply py-[.75rem] rounded-md bg-[#c00020fd] transition-all ease-in-out mt-2 duration-[225ms]
+		grid place-items-center;
 	}
 
 	.product-form-span {
 		filter: drop-shadow(2px 2px 4px #3000004d);
-		@apply block font-bold text-[1.05rem] tracking-[0.04rem] text-white transition-all
-		duration-300 ease-in-out;
+		@apply block font-bold text-[1.15rem] tracking-[0.035rem] text-white transition-all
+		duration-200 ease-in-out;
 	}
 
 	.product-form-submit:hover,
 	.product-form-submit:focus {
-		box-shadow: 0 0 2.5px 3px hsla(0, 91%, 51%, 0.825), inset 0 0 2px 1px hsla(0, 91%, 51%, 0.64);
+		box-shadow: 0 0 2.5px 3px #f41010d2, inset 0 0 2px 1px #f41010a3;
 		@apply bg-white/[.0001];
 	}
 
@@ -562,6 +563,12 @@ textarea::-webkit-scrollbar {
 		transition-all ease-in-out text-center rounded-md cursor-pointer;
 	}
 
+	.about-us-cards::after {
+		content: '';
+		backdrop-filter: blur(1px);
+		@apply absolute inset-0  w-full h-full bg-transparent rounded-lg;
+	}
+
 	.about-us-cards:hover,
 	.about-us-cards:focus {
 		box-shadow: inset 0 0 10px 4px #0530a5d9, 0 0 3px 2px #0a4bff06;
@@ -569,7 +576,7 @@ textarea::-webkit-scrollbar {
 	}
 
 	.about-us-icon {
-		filter: drop-shadow(1px 1.5px 4px #6b93ff0d);
+		filter: drop-shadow(1px 1.5px 4px #6b93ff0a);
 		@apply absolute scale-100 -top-[1.175rem] left-1/2 -translate-x-1/2 text-[3.5rem] text-[#B20419]
 		transition-all ease-in-out z-10 pointer-events-none;
 	}
@@ -583,7 +590,7 @@ textarea::-webkit-scrollbar {
 	.about-us-h4 {
 		filter: drop-shadow(1px 1.5px 3px #0a4bff4d);
 		@apply font-AirBnbCerealLight text-[1.05rem] tracking-[.045rem] leading-[1.35] text-white pt-2 pb-1
-		transition-all ease-in-out pointer-events-none;
+		transition-all ease-in-out pointer-events-none z-10;
 	}
 
 	.about-us-cards:hover .about-us-h4,
@@ -593,7 +600,7 @@ textarea::-webkit-scrollbar {
 
 	.about-us-text {
 		filter: drop-shadow(1px 1.5px 3px #0a4bff4d);
-		@apply font-light text-[.98rem] leading-[1.31] transition-all ease-in-out pointer-events-none;
+		@apply font-light text-[.98rem] leading-[1.31] transition-all ease-in-out pointer-events-none z-10;
 	}
 
 	.about-us-cards:hover .about-us-text,
@@ -612,67 +619,74 @@ textarea::-webkit-scrollbar {
 			/*///////////////////////////////////*/
 
 	.services-h2 {
-		text-shadow: 1.2px .875px 5px #3db8ff4d;
-		@apply font-AirBnbCerealBold uppercase tracking-[.001rem] text-[2rem] mt-5 self-start;
+		text-shadow: 2.2px 1.2px 4px #011C65;
+		@apply font-AirBnbCerealBold uppercase text-[2.13rem] -tracking-[0.0165rem] mt-5 self-start;
 	}
 
 	.services-tabs-container {
-		box-shadow: inset 0 0 5px 3px #0039a380, 0 0 3px 2px #0a4bff17;
-		@apply relative grid place-items-center mt-[1.35rem] bg-white/[.0001] h-[23.4rem] w-full rounded-md
-		transition-all duration-300 ease-in-out overflow-x-hidden z-0;
+		box-shadow: inset 0 0 5px 3px #011C65, 0 0 3px 2px #011C65;
+		@apply relative grid place-items-center mt-[1.337rem] bg-white/[.0001] h-[23.4rem] w-full
+		rounded-md transition-all duration-300 ease-in-out overflow-x-hidden z-0;
 	}
 
 	.services-tabs-ul {
-		@apply relative self-start flex items-center justify-evenly w-[101%] cursor-pointer bg-black/5 z-10;
+		@apply relative self-start flex items-center justify-evenly w-[101%] cursor-pointer z-20;
 	}
 
+/* 	.services-tabs-ul:hover,
+	.services-tabs-ul:focus {
+		@apply ;
+	} */
+
 	.services-tabs-ul::before {
-		box-shadow: inset 0 0 5px 3px #0039a3cc, 0 0 3px 2px #0a4bff17;;
 		content: '';
-		@apply absolute blur-[1.85px] h-[99.1%] w-[99.1%] border-2 border-[#0039a3cc];
+		@apply absolute top-0 -bottom-[.06rem] left-0 right-0 blur-[1.8px] border-b-[5px] border-[#011C65];
 	}
 
 	.services-tabs-ul.left::after,
 	.services-tabs-ul.center::after,
 	.services-tabs-ul.right::after {
-		@apply transition-all ease-in-out duration-[280ms];
+		@apply transition-all ease-in-out duration-[180ms] h-full bg-[#b8111a];
 	}
 
 	.services-tabs-ul.left::after {
 		content: '';
+		box-shadow: inset 4px -1px 3px 2.5px #011C65;
 		border-start-start-radius: 0.375rem;
 		border-start-end-radius: 0.125rem;
 		border-end-end-radius: 0.125rem;
 		border-end-start-radius: 0.375rem;
-		@apply absolute top-0 bottom-0 w-[calc(33.333333%-2px)] ml-[.12rem] mr-0 bg-[#0039a34d] right-full translate-x-[100.5%];
+		@apply absolute top-[.46px] bottom-0 w-[calc(33.333333%-.5px)] ml-[.12rem] mr-0
+		right-full translate-x-[100.5%];
 	}
 
 	.services-tabs-ul.center::after {
 		content: '';
-		@apply absolute top-0 bottom-0 w-[calc(33.333333%-6px)] bg-[#0039a34d] right-1/2 translate-x-1/2
-		mx-0 rounded-sm;
+		box-shadow: inset 0 -1px 3px 2.5px #011C65;
+		@apply absolute top-[.46px] bottom-0 w-[calc(33.333333%-.5px)] right-1/2 translate-x-1/2 mx-0 rounded-sm;
 	}
 
 	.services-tabs-ul.right::after {
+		content: '';
 		border-start-end-radius: 0.375rem;
 		border-start-start-radius: 0.125rem;
 		border-end-end-radius: 0.375rem;
 		border-end-start-radius: 0.125rem;
-		content: '';
-		@apply absolute top-0 bottom-0 w-[calc(33.333333%-2px)] bg-[#0039a34d] right-0 translate-x-0 mr-[.12rem] ml-0;
+		box-shadow: inset -4px -1px 3px 2.5px #011C65;
+		@apply absolute top-[.46px] bottom-0 w-[calc(33.333333%-.3px)] right-0 translate-x-0 mr-[.12rem] ml-0;
 	}
 
 	.services-tabs-li-btn {
-		@apply relative py-4 w-1/3 grid place-items-center z-10;
+		@apply relative py-[.82rem] w-1/3 grid place-items-center z-10;
 	}
 
-	.services-tabs-li-btn.middle::before {
+	.services-tabs-li-btn.center::before {
 		content: '';
-		@apply absolute inset-0 blur-[1.85px] border-x-[3.5px] border-[#0039a3cc];
+		@apply absolute inset-0 blur-[1.8px] border-[#011C65] border-x-[4.5px];
 	}
 
 	.services-tabs-li {
-		text-shadow: 1.2px .875px 5px #3db8ff4d;
-		@apply text-[1.33rem] tracking-[.045rem] text-white pointer-events-none mb-[.15rem];
+		text-shadow: 2.35px 2.25px 4.5px #00032e80;
+		@apply text-[1.199rem] font-semibold tracking-[.02rem] text-white pointer-events-none mb-[.07rem];
 	}
 }
