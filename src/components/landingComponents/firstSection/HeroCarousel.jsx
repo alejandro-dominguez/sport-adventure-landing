@@ -71,6 +71,7 @@ const HeroCarousel = ({ heroCarouselImgsData }) => {
                     type='button'
                     className='hero-carousel-btn left'
                     onClick={() => prevImg()}
+                    tabIndex='-1'
                 >
                     <BsCaretLeftFill className='hero-carousel-icon' />
                 </button>
@@ -78,6 +79,7 @@ const HeroCarousel = ({ heroCarouselImgsData }) => {
                     type='button'
                     className='hero-carousel-btn right'
                     onClick={() => nextImg()}
+                    tabIndex='-1'
                 >
                     <BsCaretRightFill className='hero-carousel-icon' />
                 </button>

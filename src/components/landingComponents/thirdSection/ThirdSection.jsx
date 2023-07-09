@@ -9,7 +9,6 @@ const ThirdSection = ({
     tabI
 }) => {
 
-
     return (
         <>
         <main

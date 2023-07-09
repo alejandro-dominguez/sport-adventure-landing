@@ -159,6 +159,7 @@ const LandingPage = () => {
             },
         ]
     )
+    
     const [tabI, setTabI] = useState(1)
 
     return (

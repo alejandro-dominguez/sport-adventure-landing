@@ -11,9 +11,7 @@ const AboutUs = ({
 }) => {
     return (
         <div className='pt-[4.6rem] bg-[#B50016]'>
-            <div
-                className='h-screen flex flex-col justify-start items-center bg-[#0a0c20] text-white'
-            >
+            <div className='h-screen flex flex-col justify-start items-center bg-[#0a0c20] text-white'>
                 <AboutUsSlider aboutSliderImgsData={aboutSliderImgsData} />
                 <div className='mt-[2.8rem] grid grid-cols-4 px-16 gap-12 place-content-between font-semibold'>
                     <div className='grid place-items-start gap-[.5rem]'>
@@ -33,16 +31,11 @@ const AboutUs = ({
                             repellendus debitis cumque culpa aliquam laborum, consecradi pisicing elit.
                         </p>
                     </div>
-                    {aboutCardsData.map(data => {
-                        return (
-                            <AboutUsCards
-                                data={data}
-                                key={data.id}
-                                setTabI={setTabI}
-                                tabI={tabI}
-                            />
-                        )
-                    })}
+                        <AboutUsCards
+                            aboutCardsData={aboutCardsData}
+                            setTabI={setTabI}
+                            tabI={tabI}
+                        />
                 </div>
             </div>
         </div>

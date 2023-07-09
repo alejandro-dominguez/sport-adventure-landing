@@ -151,7 +151,7 @@ const FeaturedProductsForm = ({
                     >
                         <BsXCircleFill className='product-form-close-btn' />
                     </button>
-                    {cardFormData !== null ?
+                    {cardFormData ?
                         <div className='product-form-img-container'>
                             <div className='product-form-img-box'>
                                 <img
