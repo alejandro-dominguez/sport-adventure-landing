@@ -1,3 +1,5 @@
+import img from '../../../assets/about-us-1.png';
+
 const Services = ({
     servicesData,
     tabI,
@@ -79,10 +81,22 @@ const Services = ({
                             </li>
                         </button>
                     </ul>
-                    <div className="grid justify-between items-center grid-cols-2">
-                        <div className="grid place-content-start">
-                            
+                    <div className='services-tab first-tab-container p-4'>
+                        <div className='grid place-content-start'>
+                            <h3>Lorem ipsum dolor sit amet.</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus dolore, quaerat 
+                                consequuntur at labore deleniti. Fugiat nam amet quisquam eum dolore maiores quos nemo, 
+                                libero sint possimus numquam sit! Corrupti eaque ratione minima voluptates sit rerum modi 
+                                beatae ut sint atque distinctio dolorem suscipit ipsam, illo provident, placeat ea numquam 
+                                quam fugiat maxime? Id veritatis sed enim recusandae? Totam ea facilis obcaecati pariatur 
+                                placeat ducimus accusamus, similique natus hic rerum assumenda qui nam odio praesentium 
+                                repudiandae nobis, voluptatem iure esse incidunt consequuntur deleniti? Tempora dolor officiis 
+                                voluptas expedita et quo molestiae doloremque. Saepe natus explicabo corporis nostrum neque libero, 
+                                accusantium tenetur in quia.
+                            </p>
                         </div>
+                        <img src={img} alt="asdasd" />
                     </div>
                 </div>
             </div>

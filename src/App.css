@@ -21,6 +21,10 @@
 	@apply m-0 p-0 box-border outline-none;
 }
 
+*::-webkit-scrollbar {
+	@apply hidden;
+}
+
 body {
     @apply w-full font-Assistant text-black antialiased overflow-hidden;
 }
@@ -31,10 +35,6 @@ nav li svg {
 
 textarea {
 	@apply resize-none;
-}
-
-textarea::-webkit-scrollbar {
-	@apply hidden;
 }
 
 @layer components {
@@ -52,10 +52,6 @@ textarea::-webkit-scrollbar {
 	.app-container {
 		@apply h-screen bg-slate-50 overflow-y-scroll overflow-x-hidden snap-y snap-mandatory 
 		scroll-smooth snap-always;
-	}
-
-	.app-container::-webkit-scrollbar {
-		@apply hidden;
 	}
 
 			/*///////////////////////////////////*/			
@@ -689,5 +685,11 @@ textarea::-webkit-scrollbar {
 	.services-tabs-li-btn.active:focus .services-tabs-li {
 		text-shadow: 40px 0 25px #b61119a6;
 		filter: drop-shadow(-40px 0 15px #b61119a6);
+	}
+
+	.services-tab.first-tab-container,
+	.services-tab.second-tab-container,
+	.services-tab.third-tab-container {
+		@apply grid justify-between items-start grid-cols-2 h-[200%];
 	}
 }
