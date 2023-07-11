@@ -77,11 +77,13 @@ const Services = ({
                             onClick={(e) => setTabs(e)}
                         >
                             <li className='services-tabs-li'>
-                                Domina el camino
+                                <span className='services-tabs-li-span'>
+                                    Domina el camino
+                                </span>
                             </li>
                         </button>
                     </ul>
-                    <div className='services-tab first-tab-container p-4'>
+                    <div className='services-tab first-tab-container'>
                         <div className='grid place-content-start'>
                             <h3>Lorem ipsum dolor sit amet.</h3>
                             <p>
@@ -96,7 +98,9 @@ const Services = ({
                                 accusantium tenetur in quia.
                             </p>
                         </div>
-                        <img src={img} alt="asdasd" />
+                        <div className="w-32">
+                            <img src={img} alt="asdasd" className='block w-full' />
+                        </div>
                     </div>
                 </div>
             </div>

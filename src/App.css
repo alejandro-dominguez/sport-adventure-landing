@@ -287,13 +287,13 @@ textarea {
 		filter: drop-shadow(3px 4px 5px #0000001a);
 		box-shadow: inset .7px .7px 1.5px 3px #000000d9;
 		@apply relative h-0 aspect-square rounded-full bg-[#24a324] opacity-0 transition-all
-		ease-in-out duration-[250ms] ;
+		ease-in-out duration-[210ms];
 	}
 
 	.product-card-hover-icon {
 		filter: drop-shadow(1px 1px 2px #0000001a);
 		@apply absolute top-1/2 -translate-y-1/2 translate-x-1/2 right-1/2 text-[#010702cc]
-		text-[1.1rem] transition-all ease-in-out duration-[250ms] opacity-0;
+		text-[1.1rem] transition-all ease-in-out duration-[210ms] opacity-0;
 	}
 	
 	/*////////////////////////////////////////////////////*/
@@ -622,7 +622,7 @@ textarea {
 
 	.services-tabs-container {
 		box-shadow: inset 0 0 5px 3px #0532ad, 0 0 3px 2px #011C65;
-		@apply relative grid grid-rows-2 place-items-center mt-[1.337rem] bg-white/[.0001] h-[23.4rem] w-full
+		@apply relative flex flex-col items-start justify-start mt-[1.337rem] bg-white/[.0001] h-[23.4rem] w-full
 		rounded-md transition-all duration-300 ease-in-out overflow-x-hidden z-0;
 	}
 
@@ -683,13 +683,13 @@ textarea {
 
 	.services-tabs-li-btn.active:hover .services-tabs-li,
 	.services-tabs-li-btn.active:focus .services-tabs-li {
-		text-shadow: 40px 0 25px #b61119a6;
-		filter: drop-shadow(-40px 0 15px #b61119a6);
+		text-shadow: 40px 0 25px #b61119;
+		filter: drop-shadow(-40px 0 15px #b5121a);
 	}
 
 	.services-tab.first-tab-container,
 	.services-tab.second-tab-container,
 	.services-tab.third-tab-container {
-		@apply grid justify-between items-start grid-cols-2 h-[200%];
+		@apply grid grid-cols-2 justify-between items-start w-full p-4;
 	}
 }

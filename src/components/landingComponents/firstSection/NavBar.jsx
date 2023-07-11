@@ -185,7 +185,6 @@ const NavBar = ({ heroCarouselImgsData }) => {
                 <li
                     className='landing-nav-li nav-item px-5'
                     onClick={() => handleAbout()}
-                    tabIndex='0'
                 >
                     <span>
                         nosotros
